@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <!--基础映射，主要映射基本字段-->
+    <resultMap id="baseMap" type="sysUser">
+        <id column="id" property="id"></id>
+        <result column="birthday" property="birthday"></result>
+        <result column="gender" property="gender"></result>
+        <result column="username" property="username"></result>
+        <result column="password" property="password"></result>
+        <result column="station" property="station"></result>
+        <result column="remark" property="remark"></result>
+        <result column="telephone" property="telephone"></result>
+    </resultMap>
+
+    <!--结果集映射：主要 多表映射-->
+    <resultMap id="findByUsernameMap" type="sysUser" extends="baseMap">
+
+        <!--映射 roles 属性-->
+        <!--
+            需要的方法： 获取数据赋值给roles属性
+            Set<Role> com.itheima.dao.RoleDao.findRolesByUserId(Integer userId);
+        -->
+        <collection
+                property="roles"
+                column="id"
+                ofType="role"
+                select="com.itheima.dao.RoleDao.findRolesByUserId"></collection>
+    </resultMap>
+
+    <select id="findByUsername" resultMap="findByUsernameMap" parameterType="string">
+        select * from t_user where username = #{username}
+    </select>
+</mapper>

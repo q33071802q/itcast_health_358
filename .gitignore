@@ -1,0 +1,9 @@
+# Project exclude paths
+/health_common_358/target/
+/health_interface_358/target/
+/health_job_358/target/
+/health_mobile_backend_358/target/
+/health_mobile_web_358/target/
+/health_oms_backend_358/target/
+/health_oms_web_358/target/
+/health_service_provider_358/target/
