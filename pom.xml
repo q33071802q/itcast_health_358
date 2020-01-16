@@ -44,7 +44,7 @@
         <!--tomcat插件的版本-->
         <tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
         <dubbo.version>2.6.2</dubbo.version>
-        <zookeeper.version>3.4.13</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
         <!--curator框架简化zookeeper的使用-->
         <curator-framework.version>4.0.1</curator-framework.version>
         <jedis.version>2.9.0</jedis.version>
