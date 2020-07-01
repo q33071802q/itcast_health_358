@@ -52,7 +52,7 @@
         <!--包装log4j日志的框架-->
         <slf4j.version>1.7.25</slf4j.version>
         <!--定时器任务框架-->
-        <quartz-scheduler.version>2.2.1</quartz-scheduler.version>
+        <quartz-scheduler.version>2.3.2</quartz-scheduler.version>
         <!--spring容器支持-->
         <spring-context-support.version>5.0.5.RELEASE</spring-context-support.version>
         <!--spring security安全框架-->
