@@ -56,7 +56,7 @@
         <!--spring容器支持-->
         <spring-context-support.version>5.0.5.RELEASE</spring-context-support.version>
         <!--spring security安全框架-->
-        <spring.security.version>5.0.2.RELEASE</spring.security.version>
+        <spring.security.version>5.2.10.RELEASE</spring.security.version>
     </properties>
 
     <!--依赖管理器 ：管理依赖的版本(不能依赖)-->
