@@ -43,7 +43,7 @@
         <fastjson.version>1.2.47</fastjson.version>
         <!--tomcat插件的版本-->
         <tomcat7-maven-plugin.version>2.2</tomcat7-maven-plugin.version>
-        <dubbo.version>2.6.2</dubbo.version>
+        <dubbo.version>2.6.12</dubbo.version>
         <zookeeper.version>3.4.13</zookeeper.version>
         <!--curator框架简化zookeeper的使用-->
         <curator-framework.version>4.0.1</curator-framework.version>
